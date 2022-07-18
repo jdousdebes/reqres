@@ -1,0 +1,18 @@
+export default {
+  appname: 'Fligoo',
+  register: 'Register',
+  darkMode: 'Dark Mode',
+  lightMode: 'Light mode',
+  name: 'Name',
+  isRequired: 'is required',
+  create: "Create",
+  updateUser: "Create user",
+  createUser: "Edit user",
+  save: "Save",
+  id: "ID",
+  avatar: "Avatar",
+  email: "Email",
+  first_name: "First name",
+  last_name: "Last name",
+  actions: "Actions",
+}
