@@ -51,19 +51,21 @@ export default {
   name: "UsersTable",
   data() {
     return {
-      headers: [
+      hasData: false,
+      icons: { mdiDelete, mdiPencil }
+    }
+  },
+  computed: {
+    headers() {
+      return [
         {text: this.$t('id'), value: 'id', sortable: false},
         {text: this.$t('avatar'), value: 'avatar', sortable: false},
         {text: this.$t('email'), value: 'email', sortable: false},
         {text: this.$t('first_name'), value: 'first_name', sortable: false},
         {text: this.$t('last_name'), value: 'last_name', sortable: false},
         {text: this.$t('actions'), value: 'actions', sortable: false},
-      ],
-      hasData: false,
-      icons: { mdiDelete, mdiPencil }
-    }
-  },
-  computed: {
+      ]
+    },
     ...mapState('app', [
       'users',
       'loading',
